@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    width: 100vw;
+    height: 58px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    padding: 0 25px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0 5px;
+    height: 58px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.search input{
+    width: 35vw;
+    height: 22px;
+    padding: 0 7px;
+}
+
+.search img{
+    height: 22px;
+    width: 24px;
+    background-color: #febd69;
+}
+
+.main{
+    min-height: calc(100vh - 58px - 4vh);
+}
+
+.slidebar{
+    background: url(/images/festival.jpg) ;
+    background-size: cover;
+        /* -webkit-mask-size: 300px 200px;
+        -webkit-mask-image: -webkit-gradient(linear, center top, center bottom,color-stop(0.00,  rgba(0,0,0,0)), color-stop(1.00,  rgba(0,0,0,1))); */
+    width: 100%;
+    height: 300px;
+}
+
+.card{
+    
+}
+
+.card-Item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-Box {
+    width: 33vw;
+    height: 45vh;
+    background: #e6e1d2;
+    margin: 10px 20px;
+}
+
+.card-Box h2{
+    margin: 15px 22px;
+}
+
+.card-Box a{
+    margin: 0 23px;
+}
+
+.card-Box img {
+    height: 200px;
+    margin: 10px 23px
+}
+
+footer{
+    height: 4vh;
+    background-color: black;
+    color: white;
+}
+footer p{
+    padding: auto;
+}
