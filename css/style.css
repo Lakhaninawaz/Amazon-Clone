@@ -1,6 +1,9 @@
+/* @import url(/css/animation.css); */
+
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .header {
@@ -50,12 +53,14 @@
     width: 35vw;
     height: 22px;
     padding: 0 7px;
+    border-radius: 4px;
 }
 
 .search img{
     height: 22px;
     width: 24px;
     background-color: #febd69;
+    cursor: pointer;
 }
 
 .main{
@@ -63,16 +68,13 @@
 }
 
 .slidebar{
-    background: url(/images/festival.jpg) ;
+    background: url(/images/festival.jpg);
     background-size: cover;
-        /* -webkit-mask-size: 300px 200px;
-        -webkit-mask-image: -webkit-gradient(linear, center top, center bottom,color-stop(0.00,  rgba(0,0,0,0)), color-stop(1.00,  rgba(0,0,0,1))); */
-    width: 100%;
     height: 300px;
 }
 
 .card{
-    
+    margin: 29px auto;
 }
 
 .card-Item{
@@ -81,10 +83,11 @@
 }
 
 .card-Box {
-    width: 33vw;
-    height: 45vh;
-    background: #e6e1d2;
+    width: 400px;
+    height: 350px;
+    background: #fff;
     margin: 10px 20px;
+    box-shadow: 0 4px 14px #c4c2c2;
 }
 
 .card-Box h2{
@@ -92,12 +95,85 @@
 }
 
 .card-Box a{
-    margin: 0 23px;
+    text-decoration: none;
 }
 
-.card-Box img {
+.card-Box a p{
+    display: inherit;
+    margin: 0 23px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(38 84 183);
+}
+
+.card-Box a p:hover{
+    color: black;
+}
+
+.card-Box a img {
     height: 200px;
-    margin: 10px 23px
+    margin: 10px 23px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.section {
+    margin: 25px auto;
+}
+
+.common-Heading h1{
+    position: relative;
+}
+
+.common-Section{
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    margin-top: 2rem;
+}
+
+.section-Box{
+    width: 100%;
+    height: 94%;
+    margin: 10px 20px;
+    overflow: initial;
+    border: 2px solid black;
+    box-shadow: 0 4px 14px #c4c2c2;
+}
+
+.section-Box img{
+    width: 200px;
+    height: 200px;
+    margin: 0px 20px;
+}
+
+.price{
+    border-top: 2px solid black;
+    margin: -1px;
+}
+
+.price h3{
+    float: left;
+    margin: 6px 6px 0 80px;
+}
+
+.price p{
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.btn{
+    width: 100%;
+    border: 2px solid black;
+    border-bottom: none;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: rgb(229 106 36);
+    background-color: black;
+    border: 2px solid rgb(229 106 36);
 }
 
 footer{
@@ -107,4 +183,13 @@ footer{
 }
 footer p{
     padding: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.234rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(80, 80, 80);
 }

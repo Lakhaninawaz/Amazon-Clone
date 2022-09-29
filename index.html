@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <title>Amazon Clone</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
+
 <body>
     <div class="header">
         <nav class="navbar">
             <div class="logo">
-            <img src="https://upload.wikimedia.org/wikipedia/donate/thumb/f/fd/Amazon-logo-white.svg/1280px-Amazon-logo-white.svg.png" alt="" width="125pxwra">
-        </div>
+                <img src="https://upload.wikimedia.org/wikipedia/donate/thumb/f/fd/Amazon-logo-white.svg/1280px-Amazon-logo-white.svg.png"
+                    alt="" width="125pxwra">
+            </div>
             <ul>
                 <li><a href="/home">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -21,35 +25,113 @@
             </ul>
             <div class="search">
                 <input type="search">
-               <img src="/images/search-icon.webp" alt="">
+                <img src="/images/search-icon.webp" alt="">
             </div>
         </nav>
     </div>
     <div class="main">
-       <div class="slidebar">
-       </div>
-       <div class="card">
-        <div class="card-Item">
-            <div class="card-Box item1">
-                <h2>Computers & Accessories</h2>
-                <img src="/images/item1.jpg" alt="" width="300px">
-                <a href="#">See All Items &rarr;</a>
-            </div>
-            <div class="card-Box item2">
-                <h2>Electronics</h2>
-                <img src="/images/item2.jpg" alt="" width="300px">
-                <a href="#">See All Items &rarr;</a>
-            </div>
-            <div class="card-Box item3">
-                <h2>Large Appliances</h2>
-               <img src="/images/item3.jpg" alt="" width="300px">
-               <a href="#">See All Items &rarr;</a>
+
+        <div class="slidebar"></div>
+
+        <!-- Start card -->
+        <div class="card">
+            <div class="card-Item">
+
+                <div class="card-Box item1">
+                    <h2>Computers & Accessories</h2>
+                    <a href="https://www.amazon.in/b?node=41516384031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank">
+                    <img src="/images/item1.jpg" alt="" width="300px">
+                    <a href="https://www.amazon.in/b?node=41516380031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank"><p> See All Items &rarr; </p></a>
+                </div>
+                <div class="card-Box item2">
+                    <h2>Electronics</h2>
+                    <a href="https://www.amazon.in/b?node=41516384031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank">
+                    <img src="/images/item2.jpg" alt="" width="300px">
+                    <a class="Move-Right"
+                        href="https://www.amazon.in/b?node=41516381031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank"><p> See All Items &rarr; </p></a>
+                </div>
+                <div class="card-Box item3">
+                    <h2>Large Appliances</h2>
+                    <a href="https://www.amazon.in/b?node=41516384031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank">
+                    <img href src="/images/item3.jpg" alt="" width="300px">
+                    <a href="https://www.amazon.in/b?node=41516384031&pf_rd_r=R71GFPWQYMWNZS059ZZZ&pf_rd_p=899e8ad3-94b1-4180-9dc3-bcc5f26b1d78&pd_rd_r=52ff6940-01cf-4777-8e33-1dca61edaa04&pd_rd_w=UmcF5&pd_rd_wg=i6no4&ref_=pd_gw_unk" target="_blank"><p> See All Items &rarr; </p></a>
+                </div>
+
             </div>
         </div>
+        <!-- End of Card -->
+        
+        <!-- section-slider for books -->
+        <div class="section">
+            <div class="common-Heading flex-all-center">
+             <h1>Books</h1>
+            </div>
+            <div class="common-Section">
+            <div class="section-Box">
+                <img src="/images/book1.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>  
+            </div>  
+        </div>
+        <div class="section-Box">
+            <img src="/images/book2.webp" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+            </div>    
+        </div>
+        <div class="section-Box">
+            <img src="/images/book3.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+            </div>    
+        </div>
+        <div class="section-Box">
+            <img src="/images/book4.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+            </div>    
+        </div>
+        <div class="section-Box">
+            <img src="/images/book5.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+            </div>    
+        </div>
+        <div class="section-Box">
+            <img src="/images/book6.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+            </div>    
+        </div>
+        <div class="section-Box">
+            <img src="/images/book7.jpg" alt="">
+            <div class="price">
+                <h3>Price:</h3>
+                <p>₹188</p>
+                <a href="#"> <button class="btn">Buy Now</button> </a>
+             </div>    
+        </div>
     </div>
-    </div>
-    <footer>
-        <p class="flex-all-center">Copyright &copy; Amazon-Clone.com</p>
+</div>
+<!-- end of section -->
+
+<footer>
+    <p class="flex-all-center">Copyright &copy; Amazon-Clone.com</p>
     </footer>
+
+</div>
 </body>
+
 </html>
