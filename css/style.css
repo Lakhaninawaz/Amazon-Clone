@@ -43,6 +43,11 @@
     text-decoration: none;
 }
 
+.navbar ul li a:hover{
+    color: rgb(255 121 0);
+    text-decoration: none;
+}
+
 .search{
     display: flex;
     align-items: center;
@@ -59,7 +64,7 @@
 .search img{
     height: 22px;
     width: 24px;
-    background-color: #febd69;
+    background-color: rgb(255 121 0);
     cursor: pointer;
 }
 
@@ -78,8 +83,10 @@
 }
 
 .card-Item{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
 }
 
 .card-Box {
